@@ -4,5 +4,5 @@ const titin = document.getElementById('title');
 const autna = document.getElementById('author');
 
 export {
-    creatli, titin, autna
-}
+  creatli, titin, autna,
+};
