@@ -1,5 +1,5 @@
 import {
-  creatli, titin, autna
+  creatli, titin, autna,
 } from './modules/variables.js';
 
 import Book from './modules/class.js';
@@ -8,12 +8,12 @@ import { DateTime } from './modules/date.js';
 
 import displayele from './modules/display.js';
 
-
 class Bookadd {
   constructor() {
     this.books = [];
     if (localStorage.books) this.books = JSON.parse(localStorage.getItem('books'));
   }
+
   additems() {
     let cards = '';
     for (let i = 0; i < this.books.length; i += 1) {
@@ -43,14 +43,14 @@ class Bookadd {
   removeBooks() {
     const removebtn = document.querySelectorAll('.remove');
     removebtn.forEach((elem) => {
-     elem.addEventListener('click', () => {
-       elem.parentNode.remove();
-      const ind = elem.id;
-      this.books.splice(ind, 1);
-      localStorage.setItem('books', JSON.stringify(this.books));
-      this.additems();
-     })
-    })
+      elem.addEventListener('click', () => {
+        elem.parentNode.remove();
+        const ind = elem.id;
+        this.books.splice(ind, 1);
+        localStorage.setItem('books', JSON.stringify(this.books));
+        this.additems();
+      });
+    });
   }
 }
 
@@ -65,4 +65,5 @@ btnadd.addEventListener('click', () => {
 
 displayele();
 
-const displaydate = document.querySelector('.date').innerHTML = DateTime.now().toFormat('MMMM dd, yyyy');
+const displaydate = document.querySelector('.date');
+displaydate.innerHTML = DateTime.now().toFormat('MMMM dd, yyyy');
