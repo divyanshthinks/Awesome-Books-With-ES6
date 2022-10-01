@@ -4,6 +4,8 @@ import {
 
 import Book from './modules/class.js';
 
+import { DateTime } from './modules/date.js';
+
 import displayele from './modules/display.js';
 
 
@@ -62,3 +64,5 @@ btnadd.addEventListener('click', () => {
 });
 
 displayele();
+
+const displaydate = document.querySelector('.date').innerHTML = DateTime.now().toFormat('MMMM dd, yyyy');
