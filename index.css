@@ -1,0 +1,83 @@
+body {
+  background: none;
+}
+
+#list-cr {
+  border: 3px solid black;
+}
+
+.book-items {
+  display: flex;
+  justify-content: space-between;
+  background-color: #d3d3d3;
+}
+
+ul {
+  list-style: none;
+}
+
+hr {
+  width: 200px;
+}
+
+.append {
+  margin-top: 40px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#add {
+  margin-left: 100px;
+}
+
+#form-head {
+  justify-content: center;
+  text-align: center;
+}
+
+#heading {
+  text-align: center;
+}
+
+#title {
+  margin-bottom: 15px;
+  border: 2px solid black;
+}
+
+#author {
+  margin-bottom: 15px;
+  border: 2px solid black;
+}
+
+.nav {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 50% 10% 10% 10%;
+  border: 2px solid black;
+}
+
+.border {
+  border-right: 3px solid black;
+}
+
+.form-section {
+  display: none;
+}
+
+.ContactPage {
+  display: none;
+  text-align: center;
+}
+
+.date {
+  text-align: right;
+}
+
+#copy {
+  border: 5px solid black;
+}
