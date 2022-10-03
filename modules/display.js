@@ -1,7 +1,7 @@
 export default function displayele() {
-  const showList = document.querySelector('.list-book-nav');
-  const addBook = document.querySelector('.add-book-nav');
-  const contactPage = document.querySelector('.contact-nav');
+  const showList = document.querySelector('#list-book-nav');
+  const addBook = document.querySelector('#add-book-nav');
+  const contactPage = document.querySelector('#contact-nav');
   const form = document.querySelector('.form-section');
   const Con = document.querySelector('.ContactPage');
   const app = document.querySelector('.append');

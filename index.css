@@ -46,15 +46,23 @@ hr {
 
 #title {
   margin-bottom: 15px;
+  border: 2px solid black;
 }
 
 #author {
   margin-bottom: 15px;
+  border: 2px solid black;
 }
 
 .nav {
-  display: flex;
+  display: grid;
   justify-content: space-between;
+  grid-template-columns: 50% 10% 10% 10%;
+  border: 2px solid black;
+}
+
+.border {
+  border-right: 3px solid black;
 }
 
 .form-section {
@@ -63,4 +71,13 @@ hr {
 
 .ContactPage {
   display: none;
+  text-align: center;
+}
+
+.date {
+  text-align: right;
+}
+
+#copy {
+  border: 5px solid black;
 }
